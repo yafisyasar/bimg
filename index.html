@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DZI Viewer</title>
+    <script src="openseadragon/openseadragon.min.js"></script>
+</head>
+<body>
+    <div id="openseadragon-viewer" style="width: 1800px; height: 1000px; background-color: #000;"></div>
+
+    <script type="text/javascript">
+        // Initialize the viewer
+        var viewer = OpenSeadragon({
+            id: "openseadragon-viewer",      // The ID of your div
+            prefixUrl: "openseadragon/images/", // Path to the toolbar images
+            tileSources: "myimage.dzi"        // Path to your .dzi file
+        });
+    </script>
+</body>
+</html>
